@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
-import API_BASE_URL from "../../apiConfig";
+
+import { API_BASE_URL } from "../../apiConfig";
 import { Subtask } from "./types";
 import {
   SubtaskWrapper,
@@ -27,17 +28,18 @@ const SubtaskItem: React.FC<SubtaskItemProps> = ({
     }
   };
 
+  const handleCheckboxChange = () => {
+    const newStatus = subtask.status === "completed" ? "pending" : "completed";
+    updateSubtaskStatus(newStatus);
+  };
+
   return (
     <SubtaskWrapper>
       <CheckboxWrapper>
         <Checkbox
           type="checkbox"
           checked={subtask.status === "completed"}
-          onChange={() =>
-            updateSubtaskStatus(
-              subtask.status === "completed" ? "pending" : "completed"
-            )
-          }
+          onChange={handleCheckboxChange}
         />
       </CheckboxWrapper>
       <SubtaskTitle className="text-overflow-ellipsis">

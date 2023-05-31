@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import TodoItem from "./TodoItem";
-import API_BASE_URL from "../../apiConfig";
+
 import { Todo } from "./types";
+import { API_BASE_URL } from "../../apiConfig";
+import TodoItem from "./TodoItem";
 import {
   AddButton,
   Input,

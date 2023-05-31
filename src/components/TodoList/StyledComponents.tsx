@@ -1,37 +1,21 @@
 import styled from "styled-components";
 
-export const SubtaskWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  margin-bottom: 0.5rem;
-`;
-
-export const CheckboxWrapper = styled.label`
-  display: flex;
-  align-items: center;
-`;
-
-export const Checkbox = styled.input`
-  margin-right: 1rem;
-`;
-
-export const SubtaskTitle = styled.p`
-  margin: 0;
-`;
-
-export const Container = styled.div`
-  flex: 1;
-  display: contents;
-  align-items: center;
+// Container components
+export const TodoListContainer = styled.div`
+  padding: 0 2rem;
 `;
 
 export const BoxWrapper = styled.div`
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 0.75rem;
   background-color: #f9f9f9;
+  overflow: hidden;
+`;
+
+// Typography components
+export const Title = styled.h1`
+  text-align: center;
+  margin-bottom: 1.25rem;
 `;
 
 export const TodoTitle = styled.h3`
@@ -39,17 +23,16 @@ export const TodoTitle = styled.h3`
   margin: 0;
 `;
 
-export const SubtaskList = styled.ul`
-  list-style-type: none;
-  padding: 0 2rem;
+export const SubtaskTitle = styled.p`
+  margin: 0;
 `;
 
-export const SubtaskInputWrapper = styled.div`
-  display: flex;
-  margin: 0.75rem 0;
-  justify-content: center;
+export const CompletionStatus = styled.p`
+  margin: 0;
+  color: #777;
 `;
 
+// Input components
 export const Input = styled.input`
   flex: 0.8;
   margin-right: 1rem;
@@ -64,29 +47,47 @@ export const AddButton = styled.button`
   width: 8rem;
 `;
 
-export const ToggleIcon = styled.span`
-  margin-left: 16px;
-  cursor: pointer;
-  font-size: 1rem;
-  color: #777;
+// Wrapper components
+export const SubtaskWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 0.5rem;
 `;
 
-export const TodoListContainer = styled.div`
-  padding: 0 2rem;
+export const CheckboxWrapper = styled.label`
+  display: flex;
+  align-items: center;
 `;
 
-export const Title = styled.h1`
-  text-align: center;
-  margin-bottom: 20px;
+export const SubtaskInputWrapper = styled.div`
+  display: flex;
+  margin: 0.75rem 0;
+  justify-content: center;
 `;
 
 export const TodoInputWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 `;
 
-export const CompletionStatus = styled.p`
-  margin: 0;
+// List components
+export const SubtaskList = styled.ul`
+  list-style-type: none;
+  padding: 0 2rem;
+`;
+
+// Icon components
+export const ToggleIcon = styled.span`
+  margin-left: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
   color: #777;
+`;
+
+export const Checkbox = styled.input`
+  margin-right: 1rem;
 `;

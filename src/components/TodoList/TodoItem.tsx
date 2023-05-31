@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
-import API_BASE_URL from "../../apiConfig";
+
+import { API_BASE_URL } from "../../apiConfig";
 import { Todo } from "./types";
 import SubtaskItem from "./SubtaskItem";
 import {
   AddButton,
   BoxWrapper,
-  Container,
+  TodoListContainer,
   CompletionStatus,
   CheckboxWrapper,
   Checkbox,
@@ -65,7 +66,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, updateTodoList }) => {
   };
 
   return (
-    <Container>
+    <TodoListContainer>
       <BoxWrapper>
         <CheckboxWrapper>
           <Checkbox
@@ -117,7 +118,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, updateTodoList }) => {
           </SubtaskInputWrapper>
         </>
       )}
-    </Container>
+    </TodoListContainer>
   );
 };
 
