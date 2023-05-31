@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+#Todo (Task) Management Application
+This is a React application for managing tasks and subtasks. It allows users to create tasks, add multiple subtasks to a parent task, and mark both tasks and subtasks as done or undone.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Installation
+To run this application locally, follow these steps:
 
-## Available Scripts
+1. Unzip the project files
+2. Change to the project directory: cd task-management-react
+3. Install the dependencies: npm install
 
-In the project directory, you can run:
+##Usage
+To start the application, run the following command:
 
-### `npm start`
+`npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The application will be running at http://localhost:3001
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##Testing
+To run the tests for the components, use the following command:
 
-### `npm test`
+`npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Dependencies
+This application uses the following dependencies:
 
-### `npm run build`
+- React
+- axios
+- styled-components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+##License
+This project is licensed under the MIT License. See the LICENSE file for more details.
