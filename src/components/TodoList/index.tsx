@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 
-import { Todo } from "./types";
 import { API_BASE_URL } from "../../apiConfig";
-import TodoItem from "./TodoItem";
 import {
   AddButton,
   Input,
-  TodoListContainer,
   Title,
   TodoInputWrapper,
+  TodoListContainer,
 } from "./StyledComponents";
+import TodoItem from "./TodoItem";
+import { Todo } from "./types";
 
 const TodoList: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);

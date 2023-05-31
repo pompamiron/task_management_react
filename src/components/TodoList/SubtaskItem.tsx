@@ -1,14 +1,14 @@
-import React from "react";
 import axios from "axios";
+import React from "react";
 
 import { API_BASE_URL } from "../../apiConfig";
-import { Subtask } from "./types";
 import {
-  SubtaskWrapper,
-  CheckboxWrapper,
   Checkbox,
+  CheckboxWrapper,
   SubtaskTitle,
+  SubtaskWrapper,
 } from "./StyledComponents";
+import { Subtask } from "./types";
 
 interface SubtaskItemProps {
   subtask: Subtask;

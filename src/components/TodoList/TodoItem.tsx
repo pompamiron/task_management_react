@@ -1,22 +1,22 @@
-import React, { useState } from "react";
 import axios from "axios";
+import React, { useState } from "react";
 
 import { API_BASE_URL } from "../../apiConfig";
-import { Todo } from "./types";
-import SubtaskItem from "./SubtaskItem";
 import {
   AddButton,
   BoxWrapper,
-  TodoListContainer,
-  CompletionStatus,
-  CheckboxWrapper,
   Checkbox,
+  CheckboxWrapper,
+  CompletionStatus,
+  Input,
+  SubtaskInputWrapper,
+  SubtaskList,
+  TodoListContainer,
   TodoTitle,
   ToggleIcon,
-  SubtaskList,
-  SubtaskInputWrapper,
-  Input,
 } from "./StyledComponents";
+import SubtaskItem from "./SubtaskItem";
+import { Todo } from "./types";
 
 interface TodoItemProps {
   todo: Todo;

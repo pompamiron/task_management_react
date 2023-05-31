@@ -1,6 +1,6 @@
-import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import axios from "axios";
+import React from "react";
 import { act } from "react-dom/test-utils";
 
 import { API_BASE_URL } from "../apiConfig";
